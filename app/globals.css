@@ -23,25 +23,34 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
+
+/* ================= CLEAN ANIMATION (NO BLUR) ================= */
+
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, 20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
 }
 
 .animate-slideUp {
   animation: slideUp 0.4s ease;
+  will-change: transform, opacity;
 }
+
+/* ================= TRUST FEED SCROLL ================= */
 
 @keyframes scrollUp {
   0% {
-    transform: translateY(0%);
+    transform: translateY(0);
   }
   100% {
     transform: translateY(-50%);
@@ -49,5 +58,6 @@ body {
 }
 
 .animate-scroll {
-  animation: scrollUp 12s linear infinite;
+  animation: scrollUp 18s linear infinite;
+  will-change: transform;
 }
