@@ -41,3 +41,11 @@ html {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.animate-scroll {
+  animation: scrollUp 18s linear infinite;
+}
