@@ -467,7 +467,6 @@ if (page === "payment") {
                   throw new Error(data?.msg || "Payment request failed");
                 }
 
-                alert("STK Push sent. Check your phone.");
               } catch (err: unknown) {
                 const message =
                   err instanceof Error ? err.message : "Payment failed";
