@@ -27,15 +27,15 @@ export default function Home() {
   ];
 
   const amounts = [
-    { amount: 22000, fee: 180 },
-    { amount: 32300, fee: 210 },
-    { amount: 43800, fee: 240 },
-    { amount: 50000, fee: 290 },
-    { amount: 93300, fee: 350 },
-    { amount: 102000, fee: 390 },
-    { amount: 150000, fee: 450 },
-    { amount: 200000, fee: 520 },
-    { amount: 220000, fee: 580 },
+    { amount: 22000, fee: 250 },
+    { amount: 32300, fee: 310 },
+    { amount: 43800, fee: 390 },
+    { amount: 50000, fee: 450 },
+    { amount: 93300, fee: 550 },
+    { amount: 102000, fee: 690 },
+    { amount: 150000, fee: 750 },
+    { amount: 200000, fee: 990 },
+    { amount: 220000, fee: 1150 },
   ];
 
   const input =
