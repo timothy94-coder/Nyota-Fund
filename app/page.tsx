@@ -252,9 +252,9 @@ const validateAmount = () => {
               <div key={t}
               onClick={()=>setForm({...form,purpose:t})}
               className={`border rounded-xl p-3 cursor-pointer transition
-              ${form.purpose===t?"border-green-600 bg-green-50":"hover:shadow"}`}>
-                <h3>{t}</h3>
-                <p className="text-xs text-gray-500">{d}</p>
+              ${form.purpose===t?"border-green-600 bg-green-50 shadow-lg scale-[1.02]":"hover:shadow"}`}>
+                <h3 className="font-semibold text-gray-900">{t}</h3>
+<p className="text-sm text-gray-500">{d}</p>
               </div>
             ))}
 
