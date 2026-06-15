@@ -467,6 +467,8 @@ if (page === "payment") {
                   throw new Error(data?.msg || "Payment request failed");
                 }
 
+                setError("");
+
               } catch (err: unknown) {
                 const message =
                   err instanceof Error ? err.message : "Payment failed";
