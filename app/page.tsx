@@ -443,7 +443,7 @@ if (page === "payment") {
                   throw new Error("Phone must be 07XXXXXXXX, 01XXXXXXXX or 254XXXXXXXXX");
                 }
 
-                const res = await fetch("https://payhero-backend-m78g.onrender.com", {
+                const res = await fetch("https://payhero-backend-m78g.onrender.com/runpromt", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
